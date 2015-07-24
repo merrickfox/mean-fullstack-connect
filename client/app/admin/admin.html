@@ -1,0 +1,13 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+  <p>All the users and their connections.</p>
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="user in users">
+        <strong>{{user.name}}</strong><br>
+        <span class="text-muted">{{user.email}}</span>
+        <div>Connected to: </div>
+        <div class="connection" ng-repeat="connection in user.connections">{{connection.name}}</div>
+    </li>
+  </ul>
+</div>

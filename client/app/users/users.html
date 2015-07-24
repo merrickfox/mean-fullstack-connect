@@ -1,0 +1,14 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+  <p>This is a list of all other users, connect to users here</p>
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="user in users" ng-show="{{user._id !== currentUser._id}}">
+        <strong>{{user.name}}</strong><br>
+        <button ng-hide="user.hasConnection" type="button" class="btn btn-primary connect-button" ng-click="connect(user)">
+        Connect
+        </button>
+        <span ng-show="user.hasConnection" class="glyphicon glyphicon-ok connected-check"></span>
+    </li>
+  </ul>
+</div>
