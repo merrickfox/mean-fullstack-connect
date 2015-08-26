@@ -6,5 +6,3 @@ Pre populated with several dummy users and an admin account, all credentials to 
 ## Tech Stack
 NodeJS, Express, AngularJS, Bootstrap, Less
 
-## Deployed Demo
-[Demo](http://46.101.22.114:9000/)
